@@ -11,5 +11,5 @@ $sharePath = read-host “Type file path EX: C:\dc\usershare”
 #prompts user for input for the share file path
 $userName = read-host “Enter user for admin access”
 #prompts user for username for full SMB access
-$user = “Adatum\” + $username
+$user = “<put your orginazations domain here>\” + $username
 New-smbshare -name $shareName -path $sharePath -fullaccess $user
